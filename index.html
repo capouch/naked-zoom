@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>RPPC Image Zoomer</title>
+</head>
+
+<body>
+  <!-- For now, render selections in this sloppy manner -->
+  <a href="#" onclick="renderImage('mainEast');return false;">Main Street East -</a>
+  <!-- Container for zoomer -->
+  <div id="imgBox" style="width: 800px; height: 600px;"></div>
+
+  <!-- Get OSD -->
+  <script src="/node_modules/openseadragon/build/openseadragon/openseadragon.min.js"></script>
+
+  <!-- Click handler to set up and render zoomer -->
+  <script type="text/javascript">
+    function renderImage(selection) {
+      // Clear out any previous contents
+      document.getElementById("imgBox").innerHTML = "";
+      // Set filename
+      var baseName = selection + '.dzi';
+      // Render viewer note nasty "node_modules" parameter!
+      var viewer = OpenSeadragon({
+        id: "imgBox",
+        prefixUrl: "/node_modules/openseadragon/build/openseadragon/images/",
+        tileSources: baseName
+      });
+    }
+  </script>
+</body>
+</html>
