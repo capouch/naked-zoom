@@ -26,6 +26,8 @@ build/Release
 # Dependency directory
 node_modules
 
+# DZI tile directories
+/brush_files
 # Optional npm cache directory
 .npm
 
