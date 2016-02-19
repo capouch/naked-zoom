@@ -30,6 +30,8 @@ node_modules
 /brush_files
 /dredge_files
 
+# Base image files (for now)
+mononDredge.png
 # Optional npm cache directory
 .npm
 
