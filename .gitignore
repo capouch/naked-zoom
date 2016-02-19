@@ -28,6 +28,8 @@ node_modules
 
 # DZI tile directories
 /brush_files
+/dredge_files
+
 # Optional npm cache directory
 .npm
 
