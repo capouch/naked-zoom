@@ -21,6 +21,7 @@ var infile = argv.file,
 
 // Perform conversion
 sharp(infile).tile(256).toFile(dzibase, function(err, info) {
+  console.log(err);
   });
 //});
 

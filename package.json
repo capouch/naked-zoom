@@ -7,7 +7,7 @@
     "method-override": "2.3.x",
     "morgan": "1.6.x",
     "openseadragon": "2.1.x",
-    "sharp": "0.12.x",
+    "sharp": "0.13.x",
     "yargs": "4.x"
   }
 }
